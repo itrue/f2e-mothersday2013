@@ -1,0 +1,68 @@
+@charset "big5";
+/* CSS Document */
+
+/*¾î¦¡*/
+.mom_2013_mikegay_horizental {
+	border: 1px solid #cc0033;
+	width: 400px;
+}
+
+.mom_2013_mikegay_horizental span {
+	float: right;
+	margin: -18px 10px;
+	cursor:pointer;
+}
+
+.mom_2013_mikegay_horizental_title {
+	height: 30px;
+	background-color: #cc0033;
+}
+
+.mom_2013_mikegay_horizental_title h6 {
+	font-size:1.3em;
+	color:#FFF;
+	padding: 5px 0 0 10px;
+}
+
+
+
+.mom_2013_mikegay_horizental_content img {
+	width:400px;
+	height:200px;
+}
+
+/*ª½¦¡*/
+
+.mom_2013_mikegay_vertical {
+	border: 1px solid #cc0033;
+}
+
+
+.mom_2013_mikegay_vertical_title {
+	width:30px;
+	height:300px;
+	float:left;
+	background-color: #cc0033;
+}
+.mom_2013_mikegay_vertical_title img {
+	margin:5px 0 4px 7px;
+	cursor:pointer;
+}
+
+.mom_2013_mikegay_vertical_title p {
+	padding-left:5px;
+}
+.mom_2013_mikegay_vertical_title a {
+	color:#FFF;
+	font-size:1.3em;
+	text-decoration:none;
+}
+
+.mom_2013_mikegay_vertical_content {
+	float:left;
+}
+
+.mom_2013_mikegay_vertical_content img {
+	width:170px;
+	height:300px;
+}

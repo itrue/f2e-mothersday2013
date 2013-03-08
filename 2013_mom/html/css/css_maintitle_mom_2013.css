@@ -1,0 +1,301 @@
+@charset "big5";
+/* CSS Document */
+
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+	background:url(../img/BG.jpg) center center fixed repeat-y;
+	-moz-background-size: cover;
+	background-size: cover;
+	font-family: "Open Sans","Heiti TC","微軟正黑體","Lucida Grande",sans-serif;
+}
+
+
+@media (min-width: 768px) and (max-width: 979px) { 
+	.navbar-text.pull-right {
+		float: none;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	
+	select {
+		width:170px !important;
+	}
+
+}
+
+@media (max-width: 767px) {
+	.block2013mdThemesetsEachImage {
+		width:100px;
+		float:left;
+		padding:8px;
+	}
+	.block2013mdThemesetsEach .caption{
+		margin-top:-10px;
+	}
+	
+	.block2013mdThemesetsEach .caption p {
+		text-align:left;
+	}
+	
+	.block2013mdThemesetsEach .caption h5 {
+		text-align:left;
+	}
+	
+/*	button.btn, input.btn[type="submit"]{
+		float:right;
+	}*/
+	
+	.pagination ul > li > a,
+	.pagination ul > li > span {
+		padding: 4px 10px;
+	}
+	
+	.navbar .btn-navbar.btn-plus,
+	.navbar .btn-navbar.btn-plus:hover {
+		background:none;
+		cursor:pointer;
+		margin-top:10px;
+		margin-right:-5px;
+	}
+	
+	.navbar .brand{
+		float:none;
+	}
+	
+	.navbar-inner {
+		padding-left: 10px;
+	}
+	
+	
+	.nav-collapse .btn{
+		margin-bottom:15px;
+	}
+	
+	select, input[type="file"] {
+		margin-left:10px;
+	}
+	
+/*	.icon-plus{
+		margin: 0 20px;
+	}*/
+	
+	
+	.nav-collapse .btn{
+		float:right;
+		margin-right:15px;
+	}
+	
+	.row-fluid .span2{
+		height:auto;
+	}
+	
+	.btnMoreAlign{
+		float:right;
+	}
+	
+	.block2013mdThemesetsEachDetail{
+		text-align:center !important;
+	}
+	
+	.block2013mdThemesetsEachBrand, .block2013mdThemesetsEachSetname {
+		text-align:left !important;
+	}
+	
+	.icon-plus{
+		margin:0 15px !important;	
+	}
+	
+
+	
+	
+
+		
+}
+
+.icon-plus{
+	margin:10px 10px 0 0;
+}
+
+.navbar .brand.brand-edit {
+	color:#CC0033;
+	font-weight:bold;
+}
+
+/*fnacybox div start*/
+
+.btn-danger {
+	margin-top:15px;
+}
+
+.fancybox-skin {
+	background:url(../img/BG.jpg) center center fixed repeat-y;
+}
+
+/*fnacybox div end*/
+
+
+
+
+.navbar .nav > li > a {
+	color:#D9542B;
+	font-size:16px;
+	*padding-right:5px;
+	padding-right:5px\9;
+}
+
+.navbar .nav > li > a:hover {
+	color:#f5997d;
+}
+
+.navbar-inner{
+	*padding-left:10px; /*IE7*/
+	*padding-right:0px; /*IE7*/
+}
+
+
+select, input[type="file"] {
+	margin-top:10px;
+	margin-right:5px;
+}
+
+
+/*LOGO*/
+.brand.logo_mom2013 {
+	padding:0 20px;
+}
+
+
+/*左邊第三區塊 - 美妝新聞標題*/
+
+.blockNewsrank1Title a{
+	font-size:14px;
+	color:#d9542b;
+	line-height:1.5;
+	margin-bottom:0.1em;
+}
+
+/*左邊第三區塊 - 美妝新聞標題*/
+.blockNewsrank1Title a:hover{
+	color:#f5997d;
+	text-decoration:underline;
+}
+
+/*左邊第三區塊 - 美妝新聞*/
+.blockNewsrank1pic img{
+	margin:0.5em;
+	float:left;
+	border:1px solid #cccccc;
+	padding:0.1em;
+	width:75px;
+	height:75px;
+}
+
+.textCenter{
+	text-align:center;
+}
+
+
+
+.blockAnnualsale2013Sales .span2{
+	margin-bottom:15px;
+	
+	
+}
+
+
+/*品牌名*/
+.block2013mdThemesetsEachBrand{
+	font-size:1.2em;
+	font-weight:bold;
+	color:#cc0033;
+}
+
+
+
+/*特惠組名*/
+.block2013mdThemesetsEachSetname{
+	font-size:1em;
+	font-weight:bold;
+	color:#67310d;
+	margin-top:0.3em;
+}
+
+/*特價*/
+.block2013mdThemesetsEachPrice{
+	font-size:1em;
+	font-weight:bold;
+
+}
+
+/*特價價位*/
+.block2013mdThemesetsEachPrice b{
+	font-size:1.6em;
+	font-weight:bold;
+	color:#ec5e08;
+}
+
+/*共有幾組*/
+.blockAnnualsale2013Sum{
+	color:#000000;
+	font-size:1em;
+}
+
+/*共有幾組加粗*/
+.blockAnnualsale2013Sum strong{
+	color:#ff0000;
+	font-size:1.6em;
+}
+
+/*搜尋按鈕對齊*/
+.btnAlign{
+
+	margin-left:1em;
+}
+
+/*看更多按鈕對齊*/
+.btnMoreAlign{
+	margin-top:1em;
+}
+
+/*標題大小色*/
+.topic{
+	font-size:1.5em;
+	font-weight:bold;
+	color:#cc0033;
+}
+
+/*達人帶購內文高度*/
+
+
+/*編輯部文章*/
+.block2013mdtitle{
+	font-size:1.5em;
+	font-weight:bold;
+	line-height:1.5;
+	color:#cc0033;
+	margin-top:0.1em;
+	margin-left:0.5em;
+	margin-right:0.5em;
+}
+
+/*1.5倍行高*/
+.lineHeight1.5{
+	line-height:1.5;
+	letter-spacing:0.1em;
+	font-size:16px;
+}
+
+.lineHeight2 a{
+	color:#000;
+	text-decoration:none;	
+}
+
+.lineHeight2 a:hover{
+	text-decoration:underline;	
+}
+
+
+
+
+
