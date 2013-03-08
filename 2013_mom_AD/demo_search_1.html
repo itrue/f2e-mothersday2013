@@ -1315,69 +1315,7 @@ twysm_Max = '5';
     
     <link href="css/mom_2013_mikegay.css" rel="stylesheet" type="text/css">
     <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
-    <script>
-        //直式標籤 -------------- start
-        function left_box_close(block) {
-          block.remove();
-        }
-        
-        function left_box_hide(block) {
-          block.hide("slide", { direction: "left" }, function() {
-            $('[data-type=bt-show]', block).show();
-            $('[data-type=bt-hide]', block).hide();
-            $('[data-type=content]', block).hide();
-            block.show();
-          });
-        }
-        
-        function left_box_hide_direct(block) {
-          $('[data-type=bt-show]', block).show();
-          $('[data-type=bt-hide]', block).hide();
-          $('[data-type=content]', block).hide();
-        }
-        
-        function left_box_show(block) {
-          $('[data-type=bt-hide]', block).show();
-          $('[data-type=bt-show]', block).hide();
-          block.hide();
-          $('[data-type=content]', block).show();
-          block.show("slide", { direction: "left" });
-          
-        }
-        
-        function left_box_init(dom) {
-          var block = $(dom).css('position', 'absolute').css('bottom', '100px').css('left', '0');
-          $(window).bind('scroll', function() {
-            block.css('position', 'fixed').css('bottom', '50px').css('left', '0');
-          });
-          $('[data-type=bt-hide]', block).bind('click', function() {
-            left_box_hide(block);
-            return false; //該按鈕是 <a href="#"> 就不會亂跳 anchor
-          });
-          $('[data-type=bt-show]', block).bind('click', function() {
-            left_box_show(block);
-            return false; //該按鈕是 <a href="#"> 就不會亂跳 anchor
-          });
-          $('[data-type=title]', block).bind('click', function() {
-            left_box_show(block);
-            return false; //該按鈕是 <a href="#"> 就不會亂跳 anchor
-          });
-          $('[data-type=bt-close]', block).bind('click', function() {
-            left_box_close(block);
-            return false; //該按鈕是 <a href="#"> 就不會亂跳 anchor
-          });
-          left_box_hide_direct(block);
-        }
-        function activate_mikegay_left(){
-          $('[data-type=left-box]').each(function() {
-            left_box_init(this);
-            });
-        }
-
-        //直式標籤 -------------- end
-    
-    
-    </script>
+    <script type='text/javascript' src="js/ad.js"></script>
     
     
 

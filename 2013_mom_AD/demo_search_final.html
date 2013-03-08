@@ -135,6 +135,7 @@ node.parentNode.insertBefore(gads, node);
 googletag.cmd.push(function() {
 googletag.defineSlot('/7981851/UrCosme_Index_Sidebar_Menu_APPQR_BTF', [92, 50], 'div-gpt-ad-1362488882387-0').addService(googletag.pubads());
 googletag.defineSlot('/7981851/UrCosme_Index_Sidebar_Menu_BTF', [102, 59], 'div-gpt-ad-1362488882387-1').addService(googletag.pubads());
+googletag.defineSlot('/7981851/UrCosme_Search_Mikegay_Horizental_ATF_1x1', [1, 1], 'div-gpt-ad-1362741724637-0').addService(googletag.pubads());
 googletag.pubads().enableSingleRequest();
 googletag.enableServices();
 });
@@ -1717,75 +1718,7 @@ window.onload=createhintbox
 
 	<link href="css/mom_2013_mikegay.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-    <script>
-        //lazyload ------  start
-        $(document).ready(function() {
-          $('[data-lazyload=true]').each(function(){
-            var dom = $(this);
-            var top = $(this).position().top
-            dom.hide();
-            $(window).bind('scroll', function() {
-              if($(window).scrollTop() + 400 > top) {
-                dom.fadeIn();
-                //callback here
-              } else {
-                dom.fadeOut();
-              }
-            });
-            bottom_box_init(dom);
-          });
-        });
-        //lazyload ------  end
-        
-        //橫式標籤 -------------- start
-        function bottom_box_close(block) {
-          block.remove();
-        }
-        
-        function bottom_box_hide(block) {
-          $('[data-type=bt-show]', block).show();
-          $('[data-type=bt-hide]', block).hide();
-          $('[data-type=content]', block).slideUp();
-        }
-        
-        function bottom_box_show(block) {
-          $('[data-type=bt-hide]', block).show();
-          $('[data-type=bt-show]', block).hide();
-          $('[data-type=content]', block).slideDown();
-        }
-        
-        function bottom_box_init(dom) {
-          var block = $(dom).css('position', 'absolute').css('bottom', '0').css('right', '0');
-          $(window).bind('scroll', function() {
-            block.css('position', 'fixed').css('bottom', '0').css('right', '0');
-          });
-          $('[data-type=bt-hide]', block).bind('click', function() {
-            bottom_box_hide(block);
-            return false; //該按鈕是 <a href="#"> 就不會亂跳 anchor
-          });
-          $('[data-type=bt-show]', block).bind('click', function() {
-            bottom_box_show(block);
-            return false; //該按鈕是 <a href="#"> 就不會亂跳 anchor
-          });
-          $('[data-type=title]', block).bind('click', function() {
-            bottom_box_show(block);
-            return false; //該按鈕是 <a href="#"> 就不會亂跳 anchor
-          });
-          $('[data-type=bt-close]', block).bind('click', function() {
-            bottom_box_close(block);
-            return false; //該按鈕是 <a href="#"> 就不會亂跳 anchor
-          });
-          bottom_box_show(block);
-        }
-        
-        
-      function activate_mikegay_bottom(){
-        $('[data-type=bottom-box]').each(function() {
-          bottom_box_init(this);
-        });   
-      }
-        //橫式標籤 -------------- end
-    </script>
+  <script type='text/javascript' src="js/ad.js"></script>
     
 <!-- UrCosme_Search_Mikegay_Horizental_ATF_1x1 -->
 <div id='div-gpt-ad-1362741724637-0' style='width:1px; height:1px;'>
