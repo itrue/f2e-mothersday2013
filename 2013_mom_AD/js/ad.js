@@ -39,6 +39,12 @@ function left_box_init(dom) {
     left_box_show(block);
     return false; //該按鈕是 <a href="#"> 就不會亂跳 anchor
   });
+  $(block).bind('mouseover', function() {
+    if(block.attr("movered") != "true") {
+      left_box_show(block);
+      block.attr("movered", "true");
+    }
+  });
   $('[data-type=title]', block).bind('click', function() {
     left_box_show(block);
     return false; //該按鈕是 <a href="#"> 就不會亂跳 anchor
