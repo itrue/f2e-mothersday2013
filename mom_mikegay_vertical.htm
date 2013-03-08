@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=big5" />
+<title>無標題文件</title>
+
+<link href="http://www.urcosme.com/include/min/?f=/css/css_default.css,/css/theme_common.css,/css/css_beautynews.css,/include/MarsZ/plugins/jQuery/thickbox/thickbox.css" rel="stylesheet" type="text/css" />
+<link href="css/mom_2013_mikegay.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+
+<script>
+	//直式標籤 -------------- start
+	function left_box_close(block) {
+	  block.remove();
+	}
+	
+	function left_box_hide(block) {
+	  block.hide("slide", { direction: "left" }, function() {
+		$('[data-type=bt-show]', block).show();
+		$('[data-type=bt-hide]', block).hide();
+		$('[data-type=content]', block).hide();
+		block.show();
+	  });
+	}
+	
+	function left_box_hide_direct(block) {
+	  $('[data-type=bt-show]', block).show();
+	  $('[data-type=bt-hide]', block).hide();
+	  $('[data-type=content]', block).hide();
+	}
+	
+	function left_box_show(block) {
+	  $('[data-type=bt-hide]', block).show();
+	  $('[data-type=bt-show]', block).hide();
+	  block.hide();
+	  $('[data-type=content]', block).show();
+	  block.show("slide", { direction: "left" });
+	  
+	}
+	
+	function left_box_init(dom) {
+	  var block = $(dom).css('position', 'absolute').css('bottom', '100px').css('left', '0');
+	  $(window).bind('scroll', function() {
+		block.css('position', 'fixed').css('bottom', '100px').css('left', '0');
+	  });
+	  $('[data-type=bt-hide]', block).bind('click', function() {
+		left_box_hide(block);
+		return false; //該按鈕是 <a href="#"> 就不會亂跳 anchor
+	  });
+	  $('[data-type=bt-show]', block).bind('click', function() {
+		left_box_show(block);
+		return false; //該按鈕是 <a href="#"> 就不會亂跳 anchor
+	  });
+	  $('[data-type=title]', block).bind('click', function() {
+		left_box_show(block);
+		return false; //該按鈕是 <a href="#"> 就不會亂跳 anchor
+	  });
+	  $('[data-type=bt-close]', block).bind('click', function() {
+		left_box_close(block);
+		return false; //該按鈕是 <a href="#"> 就不會亂跳 anchor
+	  });
+	  left_box_hide_direct(block);
+	}
+	
+	$(document).ready(function() {
+	  $('[data-type=left-box]').each(function() {
+		left_box_init(this);
+	  });
+	});
+	//直式標籤 -------------- end
+
+
+</script>
+
+</head>
+
+<body>
+	<div>
+    	<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </div>
+    
+	<div data-type="left-box" class="mom_2013_mikegay_vertical">
+
+        <div class="mom_2013_mikegay_vertical_title">
+        	
+            <span data-type="bt-show"><img alt="" src="images/max.gif"></span>
+            <span data-type="bt-hide"><img alt="" src="images/min.gif"></span>
+            <p data-type="title"><a href="#">標題標題標題標題標題標題</a></p>
+  
+        
+        </div>
+        
+        <div data-type="content" class="mom_2013_mikegay_vertical_content">
+			<img src="http://d305aismuv0qme.cloudfront.net/ads/images_banner/11091.gif" />
+        </div>
+	</div> 
+    
+    <div>
+    	<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </div> 
+
+	
+</body>
+</html>
