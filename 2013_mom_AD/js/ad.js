@@ -10,12 +10,14 @@ function left_box_hide(block) {
     $('[data-type=content]', block).hide();
     block.show();
   });
+  block.attr("data-showed", "false");
 }
 
 function left_box_hide_direct(block) {
   $('[data-type=bt-show]', block).show();
   $('[data-type=bt-hide]', block).hide();
   $('[data-type=content]', block).hide();
+  block.attr("data-showed", "hide");
 }
 
 function left_box_show(block) {
@@ -24,6 +26,7 @@ function left_box_show(block) {
   block.hide();
   $('[data-type=content]', block).show();
   block.show("slide", { direction: "left" });
+  block.attr("data-showed", "true");
 }
 
 function left_box_init(dom) {
@@ -46,7 +49,11 @@ function left_box_init(dom) {
     }
   });
   $('[data-type=title]', block).bind('click', function() {
-    left_box_show(block);
+    if(block.attr("data-showed") == "true") {
+      left_box_hide(block);
+    } else {
+      left_box_show(block);
+    }
     return false; //該按鈕是 <a href="#"> 就不會亂跳 anchor
   });
   $('[data-type=bt-close]', block).bind('click', function() {
