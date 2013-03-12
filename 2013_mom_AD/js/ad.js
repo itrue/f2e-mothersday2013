@@ -2,9 +2,9 @@
 $(document).ready(function(){
   $('[data-type=marquee]').each(function() {
     var dom = $(this);
-    var height = dom.attr('data-height');
+    var height = dom.height();
     dom.css('position', 'relative').css('overflow', 'hidden').css('height', height).css('display', 'block');
-    $('li', dom).css('position', 'absolute').css('display', 'block').css('top', '-'+dom.attr('data-height'));
+    $('li', dom).css('position', 'absolute').css('display', 'block').css('top', '-'+height+'px');
     var speed = parseInt(dom.attr("data-speed"));
     if(speed <= 0) speed = 300;
     var pause = parseInt(dom.attr("data-pause"));
