@@ -1,19 +1,21 @@
 //跑馬燈 ---------------- start
 $(document).ready(function(){
-  $('[data-type=slidetext]').each(function() {
+  $('[data-type=marquee]').each(function() {
     var dom = $(this);
     var height = dom.attr('data-height');
-    dom.css('position', 'relative').css('overflow', 'hidden').css('height', height)
-    $('ul', dom).css('position', 'absolute').css('height', height).css('top', '-'+height);;
+    dom.css('position', 'relative').css('overflow', 'hidden').css('height', height).css('display', 'block');
+    $('li', dom).css('position', 'absolute').css('display', 'block').css('top', '-'+dom.attr('data-height'));
     var speed = parseInt(dom.attr("data-speed"));
     if(speed <= 0) speed = 300;
     var pause = parseInt(dom.attr("data-pause"));
     if(pause <= 0) speed = 2000;
-    dom.textslider({
-      direction : 'scrollUp', // 捲動方向: scrollUp向上, scrollDown向下
-      scrollNum : 1, // 一次捲動幾個元素
-      scrollSpeed : speed, // 捲動速度(ms)
-      pause : pause // 停頓時間(ms)
+    dom.marquee({
+      yScroll : 'bottom',
+      showSpeed : 800,
+      scrollSpeed : speed,
+      pauseSpeed : pause ,
+      pauseOver : true,
+      loop: -1
     });
   });
 });
