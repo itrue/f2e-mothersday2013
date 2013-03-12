@@ -11,6 +11,12 @@ body {
 }
 
 
+@media (min-width: 1200px) { 
+}
+
+@media (min-width: 980px) and (max-width: 1199px) { 
+}
+
 @media (min-width: 768px) and (max-width: 979px) { 
 	.navbar-text.pull-right {
 		float: none;
