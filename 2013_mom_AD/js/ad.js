@@ -97,11 +97,12 @@ function activate_mikegay_left(){
 //橫式標籤 -------------- start
 function bottom_box_lazy_load(dom) {
   var dom = $(dom);
-  if(dom.attr("data-position")) {
-    var top = $("#div-gpt-ad-1362741724637-0").position().top;
-  } else {
-    var top = dom.position().top;
-  }
+  // if(dom.attr("data-position")) {
+  //   var top = $("#div-gpt-ad-1362741724637-0").position().top;
+  // } else {
+  //   var top = dom.position().top;
+  // }
+  var top = dom.position().top;
   dom.hide();
   bottom_box_init(dom);
   $(window).bind('scroll', function() {
