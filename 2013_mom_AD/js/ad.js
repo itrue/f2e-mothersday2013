@@ -1,16 +1,16 @@
 //跑馬燈 ---------------- start
 $(document).ready(function(){
-  // this block is for auto remove empty divs, but i can't modify jquery marquee by executing $(obj).marquee('upadte');
-  // $('[data-type=marquee] li').each(function(){
-  //   $(this).bind('DOMSubtreeModified',function(){
-  //     $('[data-type=marquee] div').each(function(){
-  //       if($(this).css('display') == 'none'){
-  //         $(this).parent().remove();
-  //       }
-  //     });
-  //     $(this).parent().marquee('update'); // fail QQ, it should be execute there
-  //   });
-  // });
+  // this block is for auto remove empty <li>
+  $('[data-type=marquee] > li').each(function(){
+    $(this).bind('DOMSubtreeModified',function(){
+      $('[data-type=marquee] > li > div').each(function(){
+        if($(this).css('display') == 'none'){
+          $(this).parents("li").remove();
+        }
+      });
+      $(this).parents("[data-type=marquee]").marquee('update');
+    });
+  });
   activate_marquee();
 });
 function activate_marquee(){
@@ -29,7 +29,7 @@ function activate_marquee(){
       scrollSpeed : speed,
       pauseSpeed : pause ,
       pauseOver : true,
-      loop: -1,
+      loop: -1
     });
   });
 }
