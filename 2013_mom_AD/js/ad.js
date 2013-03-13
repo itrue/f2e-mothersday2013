@@ -1,6 +1,21 @@
 //跑馬燈 ---------------- start
-$(document).ready(function(){
-  $('[data-type=marquee]').each(function() {
+$(window).load(function(){
+  // this block is for auto remove empty <li>
+  $('[data-type=marquee] > li').each(function(){
+    $(this).bind('DOMSubtreeModified',function(){
+      $('[data-type=marquee] > li > div').each(function(){
+        var pattern = $(this).find("iframe").first().contents().find("a").html();
+        if(!pattern){
+          $(this).parents("li").remove();
+        }
+      });
+      $(this).parents("[data-type=marquee]").marquee('update');
+    });
+  });
+  activate_marquee();
+});
+function activate_marquee(){
+  $('[data-type=marquee]').each(function(){
     var dom = $(this);
     var height = dom.height();
     dom.css('position', 'relative').css('overflow', 'hidden').css('height', height).css('display', 'block');
@@ -18,7 +33,7 @@ $(document).ready(function(){
       loop: -1
     });
   });
-});
+}
 //跑馬燈 ---------------- end
 
 //直式標籤 -------------- start
