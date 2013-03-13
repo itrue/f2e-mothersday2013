@@ -1,6 +1,9 @@
 //跑馬燈 ---------------- start
 $(document).ready(function(){
-  $('[data-type=marquee]').each(function() {
+  activate_marquee();
+});
+function activate_marquee(){
+  $('[data-type=marquee]').each(function(){
     var dom = $(this);
     var height = dom.height();
     dom.css('position', 'relative').css('overflow', 'hidden').css('height', height).css('display', 'block');
@@ -18,7 +21,7 @@ $(document).ready(function(){
       loop: -1
     });
   });
-});
+}
 //跑馬燈 ---------------- end
 
 //直式標籤 -------------- start
