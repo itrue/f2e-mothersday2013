@@ -98,9 +98,9 @@ function activate_mikegay_left(){
 function bottom_box_lazy_load(dom) {
   var dom = $(dom);
   if(dom.attr("data-position")) {
-    var top = $("#div-gpt-ad-1362741724637-0").position().top;
+    var top = $(dom.attr("data-position")).offset().top;
   } else {
-    var top = dom.position().top;
+    var top = dom.offset().top;
   }
   dom.hide();
   bottom_box_init(dom);
@@ -159,4 +159,5 @@ function activate_mikegay_bottom(){
     bottom_box_lazy_load($(this));
   });   
 }
+
 //橫式標籤 -------------- end
