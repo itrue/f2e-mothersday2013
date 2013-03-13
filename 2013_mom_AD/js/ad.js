@@ -1,10 +1,11 @@
 //跑馬燈 ---------------- start
-$(document).ready(function(){
+$(window).load(function(){
   // this block is for auto remove empty <li>
   $('[data-type=marquee] > li').each(function(){
     $(this).bind('DOMSubtreeModified',function(){
       $('[data-type=marquee] > li > div').each(function(){
-        if($(this).css('display') == 'none'){
+        var pattern = $(this).find("iframe").first().contents().find("a").html();
+        if(!pattern){
           $(this).parents("li").remove();
         }
       });
