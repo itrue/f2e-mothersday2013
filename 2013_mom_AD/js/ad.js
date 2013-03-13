@@ -1,4 +1,5 @@
 //跑馬燈 ---------------- start
+
 $(document).ready(function(){
   $('[data-type=marquee]').each(function() {
     var dom = $(this);

@@ -1204,7 +1204,6 @@ input[type="file"] {
 select {
   width: 220px;
   *width:170px;
-  width:170px\9; 
   background-color: #ffffff;
   border: 1px solid #cccccc;
 }
