@@ -1,4 +1,17 @@
 //跑馬燈 ---------------- start
+$(document).ready(function() {
+  activate_marquee();
+  $('[data-type=marquee] > li').each(function(){
+    var ul = $(this).parents("[data-type=marquee]")
+    $('[data-type=marquee] li iframe:visible').each(function() {
+      var test_iframe = $(this).contents();
+      test_iframe.find('a').attr("style", ul.attr('data-style'));
+      test_iframe.find('span').attr("style", ul.attr('data-style'));
+      var word = test_iframe.find('b').html();
+      test_iframe.find('b').parents('span').html(word);
+    });
+  });
+});
 $(window).load(function(){
   // this block is for auto remove empty <li>
   $('[data-type=marquee] > li').each(function(){
@@ -20,7 +33,6 @@ $(window).load(function(){
       });
     });
   });
-  activate_marquee();
 });
 function activate_marquee(){
   $('[data-type=marquee]').each(function(){
