@@ -9,7 +9,15 @@ $(window).load(function(){
           $(this).parents("li").remove();
         }
       });
-      $(this).parents("[data-type=marquee]").marquee('update');
+      var ul = $(this).parents("[data-type=marquee]")
+      ul.marquee('update');
+      $('[data-type=marquee] li iframe:visible').each(function() {
+        var test_iframe = $(this).contents();
+        test_iframe.find('a').attr("style", ul.attr('data-style'));
+        test_iframe.find('span').attr("style", ul.attr('data-style'));
+        var word = test_iframe.find('b').html();
+        test_iframe.find('b').parents('span').html(word);
+      });
     });
   });
   activate_marquee();
