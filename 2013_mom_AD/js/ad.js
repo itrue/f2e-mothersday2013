@@ -141,7 +141,10 @@ function bottom_box_lazy_load(dom) {
   bottom_box_init(dom);
   $(window).bind('scroll', function() {
     if($(window).scrollTop() + 400 > top) {
-      $('[data-type=bt-show]', dom).hide();
+      if(dom.attr("data-showed") != "true") {
+        $('[data-type=bt-show]', dom).hide();
+        dom.attr("data-showed", "true");
+      }
       dom.slideDown();
     } else {
       dom.slideUp();
