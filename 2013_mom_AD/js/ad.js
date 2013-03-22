@@ -2,19 +2,13 @@
 $(document).ready(function() {
   activate_marquee();
   $('[data-type=marquee] > li').each(function(){
-    var ul = $(this).parents("[data-type=marquee]")
-    $('[data-type=marquee] li iframe:visible').each(function() {
-      var test_iframe = $(this).contents();
-      test_iframe.find('a').attr("style", ul.attr('data-style'));
-      test_iframe.find('span').attr("style", ul.attr('data-style'));
-      var word = test_iframe.find('b').html();
-      test_iframe.find('b').parents('span').html(word);
-    });
+    activate_marquee_style(this);
   });
 });
 $(window).load(function(){
   // this block is for auto remove empty <li>
   $('[data-type=marquee] > li').each(function(){
+    activate_marquee_style(this);
     $(this).bind('DOMSubtreeModified',function(){
       $('[data-type=marquee] > li > div').each(function(){
         var pattern = $(this).find("iframe").first().contents().find("a").html();
@@ -34,6 +28,16 @@ $(window).load(function(){
     });
   });
 });
+function activate_marquee_style(li){
+  var ul = $(li).parents("[data-type=marquee]")
+  ul.find('li iframe:visible').each(function() {
+    var test_iframe = $(this).contents();
+    test_iframe.find('a').attr("style", ul.attr('data-style'));
+    test_iframe.find('span').attr("style", ul.attr('data-style'));
+    var word = test_iframe.find('b').html();
+    test_iframe.find('b').parents('span').html(word);
+  });
+}
 function activate_marquee(){
   $('[data-type=marquee]').each(function(){
     var dom = $(this);
@@ -46,10 +50,10 @@ function activate_marquee(){
     if(pause <= 0) speed = 2000;
     dom.marquee({
       yScroll : 'bottom',
-      showSpeed : 800,
+      showSpeed : 1000,
       scrollSpeed : speed,
       pauseSpeed : pause ,
-      pauseOver : true,
+      pauseOnHover : true,
       loop: -1
     });
   });
