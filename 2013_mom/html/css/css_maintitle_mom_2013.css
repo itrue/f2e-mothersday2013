@@ -44,6 +44,11 @@ body {
   #extra_gift select {
 	  width: 250px;
   }
+  
+/*特惠組品牌名*/  
+  .block2013mdThemesetsEachBrand {
+	  margin-top:10px;
+  }
 }
 
 @media (min-width: 980px) and (max-width: 1199px) { 
@@ -109,12 +114,18 @@ body {
   .row-fluid .span2 {
 	  height:420px;
   }
+/*特惠組品牌名*/  
+  .block2013mdThemesetsEachBrand {
+	  margin-top:10px;
+  }
 
 
 /*達人帶GO*/  
   .blockNewsrank1Title {
 	  margin-top:-10px;
   }
+  
+
   
 
 
@@ -169,6 +180,10 @@ body {
 	  padding: 4px 10px;
   }
 
+/*特惠組品牌名*/  
+  .block2013mdThemesetsEachBrand {
+	  margin-top:10px;
+  }
 
   
 
@@ -267,6 +282,10 @@ body {
 	text-align:center !important;
   }
   
+  .block2013mdThemesetsEachBrand {
+	  text-indent:30px;
+  }
+  
   .block2013mdThemesetsEachBrand, .block2013mdThemesetsEachSetname {
 	text-align:left !important;
   }
@@ -274,6 +293,8 @@ body {
   .icon-plus{
 	margin:0 15px !important;	
   }
+  
+
   
 	
 
@@ -387,6 +408,7 @@ select, input[type="file"] {
   font-size:1.2em;
   font-weight:bold;
   color:#cc0033;
+  margin-top:10px\9;
 }
 
 
@@ -491,6 +513,23 @@ select{
 	width:170px\9;
 }
 
+.navbar-inner.navbar-inner-search {
+	*margin-left:-20px;
+}
+
+.recommand_icon {
+	position:relative;
+	bottom:-20px;
+	left:-10px;
+	width:40px;
+	margin-top:-40px;
+	*margin-top:-39px;
+
+}
+
+.blockAnnualsale2013Sales .span2 {
+	margin-top:25px;
+}
 
 
 
