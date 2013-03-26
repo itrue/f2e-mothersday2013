@@ -31,6 +31,7 @@ $(window).load(function(){
 function activate_marquee_style(li){
   var ul = $(li).parents("[data-type=marquee]")
   ul.find('li iframe:visible').each(function() {
+    $('[data-type=dfp_marquee_tag]').show();
     var test_iframe = $(this).contents();
     test_iframe.find('a').attr("style", ul.attr('data-style'));
     test_iframe.find('span').attr("style", ul.attr('data-style'));
@@ -39,6 +40,7 @@ function activate_marquee_style(li){
   });
 }
 function activate_marquee(){
+  $('[data-type=dfp_marquee_tag]').hide();
   $('[data-type=marquee]').each(function(){
     var dom = $(this);
     var height = dom.height();
