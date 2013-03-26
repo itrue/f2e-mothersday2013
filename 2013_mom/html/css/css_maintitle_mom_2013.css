@@ -49,6 +49,17 @@ body {
   .block2013mdThemesetsEachBrand {
 	  margin-top:10px;
   }
+  
+/*編輯部專輯報導標題*/   
+  .block2013mdtitle {
+	  height:100px;
+  }
+
+/*滿額贈*/    
+.row-fluid .span2.extra_gift {
+	height:520px;
+}
+
 }
 
 @media (min-width: 980px) and (max-width: 1199px) { 
@@ -125,6 +136,10 @@ body {
 	  margin-top:-10px;
   }
   
+/*滿額贈*/    
+.row-fluid .span2.extra_gift {
+	height:520px;
+}  
 
   
 
@@ -184,6 +199,11 @@ body {
   .block2013mdThemesetsEachBrand {
 	  margin-top:10px;
   }
+  
+/*滿額贈*/    
+  .row-fluid .span2.extra_gift {
+	  height:680px;
+  } 
 
   
 
@@ -470,13 +490,14 @@ select, input[type="file"] {
 
 /*編輯部文章*/
 .block2013mdtitle{
-  font-size:1.5em;
+  font-size:1.2em;
   font-weight:bold;
   line-height:1.5;
   color:#cc0033;
-  margin-top:0.1em;
+/*  margin-top:0.1em;
   margin-left:0.5em;
-  margin-right:0.5em;
+  margin-right:0.5em;*/
+  
 }
 
 /*1.5倍行高*/
@@ -530,6 +551,13 @@ select{
 .blockAnnualsale2013Sales .span2 {
 	margin-top:25px;
 }
+
+.row-fluid .span2.extra_gift {
+	height:530px\9;
+	*height:530px;
+}
+
+
 
 
 
