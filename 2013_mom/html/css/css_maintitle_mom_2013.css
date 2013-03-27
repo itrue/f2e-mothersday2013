@@ -557,6 +557,10 @@ select{
 	*height:530px;
 }
 
+.clear {
+	clear:both;
+}
+
 
 
 
