@@ -36,6 +36,7 @@ $(window).load(function(){
 function activate_marquee_style(li){
   var ul = $(li).parents("[data-type=marquee]")
   ul.find('li iframe:visible').each(function() {
+    $('[data-type=dfp_marquee_tag]').css("box-shadow","1px 1px 2px rgba(0, 0, 0, 0.3)").css("background-color","#8b4582");
     var test_iframe = $(this).contents();
     test_iframe.find('a').attr("style", ul.attr('data-style'));
     test_iframe.find('span').attr("style", ul.attr('data-style'));
