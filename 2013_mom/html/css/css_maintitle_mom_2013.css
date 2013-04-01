@@ -49,6 +49,34 @@ body {
   .block2013mdThemesetsEachBrand {
 	  margin-top:10px;
   }
+  
+/*編輯部專輯報導標題*/   
+  .block2013mdtitle {
+	  height:100px;
+  }
+
+/*滿額贈*/    
+.row-fluid .span2.extra_gift {
+	height:520px;
+}
+
+/*特惠組*/  
+.row-fluid .span2 {
+	height:400px;
+}
+
+
+
+
+/*編輯部報導*/
+.editor .span2 {
+	height:270px;
+}
+
+
+
+
+
 }
 
 @media (min-width: 980px) and (max-width: 1199px) { 
@@ -112,7 +140,7 @@ body {
   }
 /*特惠組*/  
   .row-fluid .span2 {
-	  height:420px;
+	  height:405px;
   }
 /*特惠組品牌名*/  
   .block2013mdThemesetsEachBrand {
@@ -125,6 +153,16 @@ body {
 	  margin-top:-10px;
   }
   
+/*滿額贈*/    
+.row-fluid .span2.extra_gift {
+	height:520px;
+} 
+
+/*編輯部報導*/
+.editor .span2 {
+	height:260px;
+}
+ 
 
   
 
@@ -180,12 +218,26 @@ body {
 	  padding: 4px 10px;
   }
 
+
 /*特惠組品牌名*/  
   .block2013mdThemesetsEachBrand {
 	  margin-top:10px;
   }
-
   
+/*滿額贈*/    
+  .row-fluid .span2.extra_gift {
+	  height:650px;
+  } 
+
+.row-fluid .span2 {
+	height:395px;
+}
+
+/*編輯部報導*/
+.editor .span2 {
+	height:240px;
+}
+ 
 
 
 
@@ -439,6 +491,7 @@ select, input[type="file"] {
 .blockAnnualsale2013Sum{
   color:#000000;
   font-size:1em;
+  margin-bottom:-15px;
 }
 
 /*共有幾組加粗*/
@@ -470,17 +523,18 @@ select, input[type="file"] {
 
 /*編輯部文章*/
 .block2013mdtitle{
-  font-size:1.5em;
+  font-size:1.2em;
   font-weight:bold;
   line-height:1.5;
   color:#cc0033;
-  margin-top:0.1em;
+/*  margin-top:0.1em;
   margin-left:0.5em;
-  margin-right:0.5em;
+  margin-right:0.5em;*/
+  
 }
 
 /*1.5倍行高*/
-.lineHeight1.5{
+.lineHeight1_5{
   line-height:1.5;
   letter-spacing:0.1em;
   font-size:16px;
@@ -511,6 +565,7 @@ select, input[type="file"] {
 
 select{
 	width:170px\9;
+	*width:220px;
 }
 
 .navbar-inner.navbar-inner-search {
@@ -530,6 +585,34 @@ select{
 .blockAnnualsale2013Sales .span2 {
 	margin-top:25px;
 }
+
+.row-fluid .span2.extra_gift {
+	height:530px\9;
+	*height:530px;
+}
+
+.clear {
+	clear:both;
+}
+
+.row-fluid {
+	*width: 120%;
+	*margin-left:-100px;
+}
+
+.editor .topic{
+	margin-top:30px;
+}
+
+
+.editor .btn.btnMoreAlign{
+	float:right;
+}
+
+.blockSearchResult table {
+	width:610px;
+}
+
 
 
 
