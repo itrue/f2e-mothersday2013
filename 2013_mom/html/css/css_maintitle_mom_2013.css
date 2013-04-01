@@ -60,6 +60,23 @@ body {
 	height:520px;
 }
 
+/*特惠組*/  
+.row-fluid .span2 {
+	height:400px;
+}
+
+
+
+
+/*編輯部報導*/
+.editor .span2 {
+	height:270px;
+}
+
+
+
+
+
 }
 
 @media (min-width: 980px) and (max-width: 1199px) { 
@@ -123,7 +140,7 @@ body {
   }
 /*特惠組*/  
   .row-fluid .span2 {
-	  height:420px;
+	  height:405px;
   }
 /*特惠組品牌名*/  
   .block2013mdThemesetsEachBrand {
@@ -139,7 +156,13 @@ body {
 /*滿額贈*/    
 .row-fluid .span2.extra_gift {
 	height:520px;
-}  
+} 
+
+/*編輯部報導*/
+.editor .span2 {
+	height:260px;
+}
+ 
 
   
 
@@ -195,6 +218,7 @@ body {
 	  padding: 4px 10px;
   }
 
+
 /*特惠組品牌名*/  
   .block2013mdThemesetsEachBrand {
 	  margin-top:10px;
@@ -202,10 +226,18 @@ body {
   
 /*滿額贈*/    
   .row-fluid .span2.extra_gift {
-	  height:680px;
+	  height:650px;
   } 
 
-  
+.row-fluid .span2 {
+	height:395px;
+}
+
+/*編輯部報導*/
+.editor .span2 {
+	height:240px;
+}
+ 
 
 
 
@@ -459,6 +491,7 @@ select, input[type="file"] {
 .blockAnnualsale2013Sum{
   color:#000000;
   font-size:1em;
+  margin-bottom:-15px;
 }
 
 /*共有幾組加粗*/
@@ -532,6 +565,7 @@ select, input[type="file"] {
 
 select{
 	width:170px\9;
+	*width:220px;
 }
 
 .navbar-inner.navbar-inner-search {
@@ -557,6 +591,27 @@ select{
 	*height:530px;
 }
 
+.clear {
+	clear:both;
+}
+
+.row-fluid {
+	*width: 120%;
+	*margin-left:-100px;
+}
+
+.editor .topic{
+	margin-top:30px;
+}
+
+
+.editor .btn.btnMoreAlign{
+	float:right;
+}
+
+.blockSearchResult table {
+	width:610px;
+}
 
 
 
