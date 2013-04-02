@@ -135,8 +135,10 @@ body {
 	  width:170px;
 	  margin: 15px 5px 0;
   }
-  #search button {
-	  margin: 15px 0 5px 0;
+  
+  
+  #search input[type="submit"] {
+	  margin:15px 0 0 0;
   }
 /*特惠組*/  
   .row-fluid .span2 {
@@ -208,6 +210,11 @@ body {
   
   #extra_gift select {
 	  width:160px;
+  }
+  
+  #search input[type="submit"] {
+	  float:right;
+	  margin: 10px 20px 20px 0;
   }
 /*特惠組*/   
   .block2013mdThemesetsEachImage {
