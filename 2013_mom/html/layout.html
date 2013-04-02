@@ -612,38 +612,52 @@
         
       <!--特別情報-->
       <div class="span12">
-        <p class="topic">特別情報</p>
-        <p class="lineHeight2"><a href="#">這裡十五字字字字字字字字字字字</a></p>
-        <p class="lineHeight2"><a href="#">這裡十五字字字字字字字字字字字</a></p>
-        <p class="lineHeight2"><a href="#">這裡十五字字字字字字字字字字字</a></p>
+        <p class="topic dfp-special-report-tag">特別情報</p>
       </div>
       <!-- 特別情報 ad code start -->
+      <script>
+      $(document).ready(function() {
+        $('.dfp-special-report').bind('DOMSubtreeModified',function(){
+          var dfp_iframe = $(this).find('iframe:visible').contents();
+          var dfp_object = $('<p class="lineHeight2 lineHeight-ad"></p>');
+          dfp_iframe.find('a').removeClass();
+          dfp_iframe.find('b').contents().unwrap();
+          dfp_iframe.find('span').contents().unwrap();
+          var word = dfp_iframe.find('a').get();;
+          if(word.length > 0){
+            $(dfp_object).append(word);
+            $(dfp_object).insertAfter('.dfp-special-report-tag');
+            dfp_iframe.find('body').html('');
+          }
+        });
+      });
+      </script>
       <!-- EventUrCosme_MothersDay2013_Index_Sidebar_SpecialReport_BTF_1x1_pos_01 -->
-      <div id='div-gpt-ad-1363349900777-0' style='width:1px; height:1px;'>
+      <div class="dfp-special-report" id='div-gpt-ad-1363349900777-0' style='width:1px; height:1px;'>
       <script type='text/javascript'>
       googletag.cmd.push(function() { googletag.display('div-gpt-ad-1363349900777-0'); });
       </script>
       </div>
       <!-- EventUrCosme_MothersDay2013_Index_Sidebar_SpecialReport_BTF_1x1_pos_02 -->
-      <div id='div-gpt-ad-1363349900777-1' style='width:1px; height:1px;'>
+      <div class="dfp-special-report" id='div-gpt-ad-1363349900777-1' style='width:1px; height:1px;'>
       <script type='text/javascript'>
       googletag.cmd.push(function() { googletag.display('div-gpt-ad-1363349900777-1'); });
       </script>
       </div>
       <!-- EventUrCosme_MothersDay2013_Index_Sidebar_SpecialReport_BTF_1x1_pos_03 -->
-      <div id='div-gpt-ad-1363349900777-2' style='width:1px; height:1px;'>
+      <div class="dfp-special-report" id='div-gpt-ad-1363349900777-2' style='width:1px; height:1px;'>
       <script type='text/javascript'>
       googletag.cmd.push(function() { googletag.display('div-gpt-ad-1363349900777-2'); });
       </script>
       </div>
       <!-- EventUrCosme_MothersDay2013_Index_Sidebar_SpecialReport_BTF_1x1_pos_04 -->
-      <div id='div-gpt-ad-1363349900777-3' style='width:1px; height:1px;'>
+      <div class="dfp-special-report" id='div-gpt-ad-1363349900777-3' style='width:1px; height:1px;'>
       <script type='text/javascript'>
       googletag.cmd.push(function() { googletag.display('div-gpt-ad-1363349900777-3'); });
       </script>
       </div>
       <!-- EventUrCosme_MothersDay2013_Index_Sidebar_SpecialReport_BTF_1x1_pos_05 -->
-      <div id='div-gpt-ad-1363349900777-4' style='width:1px; height:1px;'>
+      <div class="dfp-special-report" id='div-gpt-ad-1363349900777-4' style='width:1px; height:1px;'>
       <script type='text/javascript'>
       googletag.cmd.push(function() { googletag.display('div-gpt-ad-1363349900777-4'); });
       </script>
@@ -657,11 +671,7 @@
             
         <!--美妝新聞-->
         <div class="span12">
-          <p class="topic">美妝新聞</p>
-          <p class="lineHeight2 lineHeight-ad"><a href="#">[母親節]SKII晶鑽母親節以源源不絕的PITERA滋養絕世美肌字字字字字</a></p>
-          <p class="lineHeight2 lineHeight-ad"><a href="#">[母親節]KANEBO佳麗寶最愛母親節獻給媽媽江蕙的感動</a></p>           	
-          <p class="lineHeight2 lineHeight-ad"><a href="#">[母親節]LANCOME蘭蔻母親節來自法國最優雅的時尚品味</a></p>
-          <p class="lineHeight2 lineHeight-ad"><a href="#">[母親節]CLINIQUE感恩母親節獻給天下媽媽最輕盈的潤澤</a></p>
+          <p class="topic dfp-special-beautynews-tag">美妝新聞</p>
           <p class="lineHeight2"><a href="#">[母親節]ANNA SUI媽媽女兒嘉年華讓母女倆愛不釋手的魔法登場</a></p>
           <p class="lineHeight2"><a href="#">[母親節]ANNA SUI媽媽女兒嘉年華讓母女倆愛不釋手的魔法登場</a></p>
           <p class="lineHeight2"><a href="#">[母親節]ANNA SUI媽媽女兒嘉年華讓母女倆愛不釋手的魔法登場</a></p>
@@ -670,32 +680,49 @@
           <p class="lineHeight2"><a href="#">[母親節]ANNA SUI媽媽女兒嘉年華讓母女倆愛不釋手的魔法登場</a></p>
         </div>
         <!-- 美妝新聞廣告 code start -->
+      <script>
+      $(document).ready(function() {
+        $('.dfp-special-beautynews').bind('DOMSubtreeModified',function(){
+          var dfp_iframe = $(this).find('iframe:visible').contents();
+          var dfp_object = $('<p class="lineHeight2 lineHeight-ad"></p>');
+          dfp_iframe.find('a').removeClass();
+          dfp_iframe.find('b').contents().unwrap();
+          dfp_iframe.find('span').contents().unwrap();
+          var word = dfp_iframe.find('a').get();
+          if(word.length > 0){
+            $(dfp_object).append(word);
+            $(dfp_object).insertAfter('.dfp-special-beautynews-tag');
+            dfp_iframe.find('body').html('');
+          }
+        });
+      });
+      </script>
         <!-- EventUrCosme_MothersDay2013_Index_Sidebar_Beautynews_BTF_1x1_pos_01 -->
-        <div id='div-gpt-ad-1363349383156-0' style='width:1px; height:1px;'>
+        <div class="dfp-special-beautynews" id='div-gpt-ad-1363349383156-0' style='width:1px; height:1px;'>
         <script type='text/javascript'>
         googletag.cmd.push(function() { googletag.display('div-gpt-ad-1363349383156-0'); });
         </script>
         </div>
         <!-- EventUrCosme_MothersDay2013_Index_Sidebar_Beautynews_BTF_1x1_pos_02 -->
-        <div id='div-gpt-ad-1363349383156-1' style='width:1px; height:1px;'>
+        <div class="dfp-special-beautynews" id='div-gpt-ad-1363349383156-1' style='width:1px; height:1px;'>
         <script type='text/javascript'>
         googletag.cmd.push(function() { googletag.display('div-gpt-ad-1363349383156-1'); });
         </script>
         </div>
         <!-- EventUrCosme_MothersDay2013_Index_Sidebar_Beautynews_BTF_1x1_pos_03 -->
-        <div id='div-gpt-ad-1363349383156-2' style='width:1px; height:1px;'>
+        <div class="dfp-special-beautynews" id='div-gpt-ad-1363349383156-2' style='width:1px; height:1px;'>
         <script type='text/javascript'>
         googletag.cmd.push(function() { googletag.display('div-gpt-ad-1363349383156-2'); });
         </script>
         </div>
         <!-- EventUrCosme_MothersDay2013_Index_Sidebar_Beautynews_BTF_1x1_pos_04 -->
-        <div id='div-gpt-ad-1363349383156-3' style='width:1px; height:1px;'>
+        <div class="dfp-special-beautynews" id='div-gpt-ad-1363349383156-3' style='width:1px; height:1px;'>
         <script type='text/javascript'>
         googletag.cmd.push(function() { googletag.display('div-gpt-ad-1363349383156-3'); });
         </script>
         </div>
         <!-- EventUrCosme_MothersDay2013_Index_Sidebar_Beautynews_BTF_1x1_pos_05 -->
-        <div id='div-gpt-ad-1363349383156-4' style='width:1px; height:1px;'>
+        <div class="dfp-special-beautynews" id='div-gpt-ad-1363349383156-4' style='width:1px; height:1px;'>
         <script type='text/javascript'>
         googletag.cmd.push(function() { googletag.display('div-gpt-ad-1363349383156-4'); });
         </script>
