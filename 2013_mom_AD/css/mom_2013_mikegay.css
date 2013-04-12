@@ -9,7 +9,6 @@
 
 .mom_2013_mikegay_horizental span {
 	float: right;
-	margin: -18px 10px;
 	cursor:pointer;
 }
 
@@ -19,9 +18,7 @@
 }
 
 .mom_2013_mikegay_horizental_title h6 {
-	font-size:1.3em;
-	color:#FFF;
-	padding: 5px 0 0 10px;
+	float:left;
 }
 
 
@@ -47,11 +44,9 @@
 }
 .mom_2013_mikegay_vertical_title img {
 	cursor:pointer;
-	padding-top: 6px;
 }
 
 .mom_2013_mikegay_vertical_title span {
-	margin: 7px;
 }
 
 
