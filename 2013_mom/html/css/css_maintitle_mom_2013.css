@@ -170,6 +170,11 @@ body {
 	height:260px;
 }
 
+.blockSearchResult table {
+	width:610px;
+}
+
+
 
  
 
@@ -251,6 +256,11 @@ body {
 .editor .span2 {
 	height:240px;
 }
+
+.blockSearchResult table {
+	width:610px;
+}
+
  
  
 
