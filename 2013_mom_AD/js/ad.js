@@ -1,9 +1,9 @@
 //跑馬燈 ---------------- start
 $(window).load(function() {
-  
+  var disable_flag = true;
   $('[data-type=marquee] > li iframe:visible').each(function(){
     var obj_iframe = $(this).contents();
-    var ul = $(this).parents("[data-type=marquee]")
+    var ul = $(this).parents("[data-type=marquee]");
     if(obj_iframe.find('a').length > 0){
       $('h3.contentpageIndexSideBigContenthotHotReview').remove();// remove origin info bar
       obj_iframe.find('a').attr("style", ul.attr('data-style'));
@@ -11,10 +11,15 @@ $(window).load(function() {
       var word = obj_iframe.find('b').html();
       obj_iframe.find('b').parents('span').html(word);
       $('[data-type=dfp_marquee_tag]').css("box-shadow","1px 1px 2px rgba(0, 0, 0, 0.3)").css("background-color","#8b4582");
+      disable_flag = false;
     }else{
-      console.log($(this).parents('li').remove());
+      $(this).parents('li').remove();
     }
   });
+  if(disable_flag == true){
+    $('div.contentpageIndexSideBigContenthotHotReview').remove();
+    $('div.searchHotKeyword_PR').remove();
+  }
   activate_marquee();
 });
 function activate_marquee(){
