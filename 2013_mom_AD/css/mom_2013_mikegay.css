@@ -3,7 +3,7 @@
 
 /*¾î¦¡*/
 .mom_2013_mikegay_horizental {
-	border: 1px solid #cc0033;
+	border: 1px solid #a4a4a4;
 	width: 400px;
 }
 
@@ -14,7 +14,7 @@
 
 .mom_2013_mikegay_horizental_title {
 	height: 30px;
-	background-color: #cc0033;
+	background-color: #a4a4a4;
 }
 
 .mom_2013_mikegay_horizental_title h6 {
@@ -31,7 +31,7 @@
 /*ª½¦¡*/
 
 .mom_2013_mikegay_vertical {
-	border: 1px solid #cc0033;
+	border: 1px solid #a4a4a4;
 	border-left: none;
 }
 
@@ -40,7 +40,7 @@
 	width:30px;
 	height:300px;
 	float:left;
-	background-color: #cc0033;
+	background-color: #a4a4a4;
 }
 .mom_2013_mikegay_vertical_title img {
 	cursor:pointer;
