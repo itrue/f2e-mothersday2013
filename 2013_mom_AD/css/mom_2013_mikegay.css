@@ -3,25 +3,22 @@
 
 /*¾î¦¡*/
 .mom_2013_mikegay_horizental {
-	border: 1px solid #cc0033;
+	border: 1px solid #a4a4a4;
 	width: 400px;
 }
 
 .mom_2013_mikegay_horizental span {
 	float: right;
-	margin: -18px 10px;
 	cursor:pointer;
 }
 
 .mom_2013_mikegay_horizental_title {
 	height: 30px;
-	background-color: #cc0033;
+	background-color: #a4a4a4;
 }
 
 .mom_2013_mikegay_horizental_title h6 {
-	font-size:1.3em;
-	color:#FFF;
-	padding: 5px 0 0 10px;
+	float:left;
 }
 
 
@@ -34,7 +31,8 @@
 /*ª½¦¡*/
 
 .mom_2013_mikegay_vertical {
-	border: 1px solid #cc0033;
+	border: 1px solid #a4a4a4;
+	border-left: none;
 }
 
 
@@ -42,21 +40,15 @@
 	width:30px;
 	height:300px;
 	float:left;
-	background-color: #cc0033;
+	background-color: #a4a4a4;
 }
 .mom_2013_mikegay_vertical_title img {
-	margin:5px 0 4px 7px;
 	cursor:pointer;
 }
 
-.mom_2013_mikegay_vertical_title p {
-	padding-left:5px;
+.mom_2013_mikegay_vertical_title span {
 }
-.mom_2013_mikegay_vertical_title a {
-	color:#FFF;
-	font-size:1.3em;
-	text-decoration:none;
-}
+
 
 .mom_2013_mikegay_vertical_content {
 	float:left;
