@@ -74,6 +74,11 @@ body {
 }
 
 
+.blockSearchResult table {
+	width:610px;
+}
+
+
 
 
 
@@ -164,6 +169,8 @@ body {
 .editor .span2 {
 	height:260px;
 }
+
+
  
 
   
@@ -245,6 +252,9 @@ body {
 	height:240px;
 }
  
+ 
+
+
 
 
 
@@ -616,9 +626,6 @@ select{
 	float:right;
 }
 
-.blockSearchResult table {
-	width:610px;
-}
 
 
 
