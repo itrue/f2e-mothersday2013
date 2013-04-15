@@ -58,10 +58,23 @@
   $(document).ready(function() {
     $('[data-fancybox-scrolldown=true]').each(function() {
       var parent_div = $(this).parents("#test")
+	  
       $(this).on('click', function() {
         $(this).parents('.fancybox-inner').animate({
-          scrollTop: parent_div.height()
+          scrollTop: '+=300'
         }, 1000);
+		
+		$('[data-fancybox-scrolldown=true]').bind('scroll', function()
+		  {
+			if($(this).scrollTop() + 
+			   $(this).innerHeight()
+			   >= $(this)[0].scrollHeight)
+			{
+			  alert('end reached');
+			}
+		  })
+
+		
         return false;
       });
     });  
@@ -749,7 +762,7 @@
       <table align="center" border="0">
         <tr class="span3">
           <td class="row-fluid">
-          	<div class="span12 scrolldown"><a href="#" data-fancybox-scrolldown="true">↓↓ scroll down ↓↓</a></div>
+          	<div class="span12 scrolldown"><a href="#" data-fancybox-scrolldown="true">↓↓ 往下看更多名細內容 ↓↓</a></div>
             <img class="span12" src="images/set.jpg" alt="" width="160" height="160" border="0">
             <p align="center"><button type="button" class="btn btn-danger"><i class="icon-plus-sign icon-white"></i> 最愛 <i class="icon-heart icon-white"></i></button></p>
             <p class="textCenter blockAnnualsale011AJAXcount">還有 <strong>XX</strong> 人也加入最愛</p>
@@ -794,7 +807,7 @@
             
     <!--下方備註-->
     <div class="span12">
-      <p class="textLeft">註1：所有特惠價格或內容皆以百貨公司現場實際銷售狀況為準。<br>註2：所有特惠內容皆由各品牌所提供，尚有部份品牌仍未提供，不便之處涵請見諒。</p>
+      <p class="textCenter">註1：所有特惠價格或內容皆以百貨公司現場實際銷售狀況為準。<br>註2：所有特惠內容皆由各品牌所提供，尚有部份品牌仍未提供，不便之處涵請見諒。</p>
     </div>
     <!--下方備註END-->
     

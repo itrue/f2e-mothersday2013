@@ -388,7 +388,7 @@ body {
   .scrolldown {
 	position:fixed;
 	left: -1px;
-	top: 0px;
+	bottom: 0px;
 	display:block;
 	background-color: #CC0033;
 	text-align: center;
