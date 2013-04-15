@@ -56,14 +56,15 @@
   
   <script>
   $(document).ready(function() {
-	  $('.scrolldown').click(function () {
-		  $('#test').animate({
-			  scrollTop: $('#test').height()
-		  }, 1000);
-		  return false;
-	  });
-  
-  
+    $('[data-fancybox-scorll=true]').each(function() {
+      var parent_div = $(this).parents("#test")
+      $(this).on('click', function() {
+        $(this).parents('.fancybox-inner').animate({
+          scrollTop: parent_div.height()
+        }, 1000);
+        return false;
+      });
+    });  
   });
   </script>
   <!-- google DFP init code Start-->
@@ -748,7 +749,7 @@
       <table align="center" border="0">
         <tr class="span3">
           <td class="row-fluid">
-          	<div class="span12 scrolldown"><a href="#">↓↓ scroll down ↓↓</a></div>
+          	<div class="span12"><a href="#" data-fancybox-scorll="true">↓↓ scroll down ↓↓</a></div>
             <img class="span12" src="images/set.jpg" alt="" width="160" height="160" border="0">
             <p align="center"><button type="button" class="btn btn-danger"><i class="icon-plus-sign icon-white"></i> 最愛 <i class="icon-heart icon-white"></i></button></p>
             <p class="textCenter blockAnnualsale011AJAXcount">還有 <strong>XX</strong> 人也加入最愛</p>
