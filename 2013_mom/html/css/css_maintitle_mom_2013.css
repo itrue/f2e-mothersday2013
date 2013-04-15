@@ -78,6 +78,10 @@ body {
 	width:610px;
 }
 
+.scrolldown {
+	display: none;
+}
+
 
 
 
@@ -174,6 +178,10 @@ body {
 	width:610px;
 }
 
+.scrolldown {
+	display: none;
+}
+
 
 
  
@@ -259,6 +267,10 @@ body {
 
 .blockSearchResult table {
 	width:610px;
+}
+
+.scrolldown {
+	display: none;
 }
 
  
@@ -371,6 +383,22 @@ body {
   
   .icon-plus{
 	margin:0 15px !important;	
+  }
+  
+  .scrolldown {
+	position:fixed;
+	left: -1px;
+	top: 0px;
+	display:block;
+	background-color: #CC0033;
+	text-align: center;
+  }
+  
+  .scrolldown a {
+	line-height: 1.8em;	
+	color: #FFF;
+	text-decoration: none;
+	font-weight: bold;
   }
   
 
