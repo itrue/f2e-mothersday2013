@@ -38,7 +38,6 @@
 	  $(".btn-detail").fancybox({
 		  openEffect  : 'none',
 		  closeEffect : 'none',
-		  
 	  });
 	  
 
@@ -57,25 +56,29 @@
   <script>
   $(document).ready(function() {
     $('[data-fancybox-scrolldown=true]').each(function() {
-      var parent_div = $(this).parents("#test")
-	  
-      $(this).on('click', function() {
-        $(this).parents('.fancybox-inner').animate({
+      var bt = $(this)
+      var parent_div = bt.parents("#test")
+	    
+      bt.on('click', function() {
+        var scroll_div = bt.parents('.fancybox-inner');
+        scroll_div.animate({
           scrollTop: '+=300'
         }, 1000);
-		
-		$('[data-fancybox-scrolldown=true]').bind('scroll', function()
-		  {
-			if($(this).scrollTop() + 
-			   $(this).innerHeight()
-			   >= $(this)[0].scrollHeight)
-			{
-			  alert('end reached');
-			}
-		  })
-
-		
         return false;
+      });
+      parent_div.on("mouseover", function() {
+        var scroll_div = bt.parents('.fancybox-inner');
+        if(scroll_div.attr("bind-scroll") != "true") {
+          scroll_div.on('scroll', function() {
+            var bt_div = bt.parents('.scrolldown');
+            if(scroll_div.scrollTop() + scroll_div.innerHeight() >= scroll_div[0].scrollHeight) {
+              bt_div.fadeOut()
+            } else {
+              bt_div.fadeIn()
+            }
+          });
+          scroll_div.attr("bind-scroll", "true");
+        }
       });
     });  
   });
