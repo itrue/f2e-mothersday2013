@@ -1,16 +1,17 @@
 //跑馬燈 ---------------- start
-var dfp_marquee_timer;
+var dfp_event_timer;
 $(window).load(function() {
-  dfp_marquee_timer = setInterval("check_marquee_loaded()",100);
-});
-
-function check_marquee_loaded(){
-  if(googletag.pubads() != undefined && googletag.pubads().isAdRequestFinished()){
-    activate_marquee_ultrim();
-    window.clearInterval(dfp_marquee_timer);
+  if(navigator.appName.indexOf("Internet Explorer")!=-1){
+    dfp_event_time = setInterval(function(){
+      if($("[data-type=marquee] iframe").length >= $("[data-type=marquee] li").length){
+        activate_marquee_ultrim();
+        window.clearInterval(dfp_event_time);
+      }
+    },100);
+  }else{
+    activate_marquee_ultrim();  
   }
-}
-
+});
 function activate_marquee_ultrim(){
   var disable_flag = true;
   $('[data-type=marquee] > li iframe:visible').each(function(){
