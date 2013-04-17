@@ -78,6 +78,10 @@ body {
 	width:610px;
 }
 
+.row-fluid div.scrolldown {
+	display: none;
+}
+
 
 
 
@@ -174,6 +178,10 @@ body {
 	width:610px;
 }
 
+.row-fluid div.scrolldown {
+	display: none;
+}
+
 
 
  
@@ -259,6 +267,10 @@ body {
 
 .blockSearchResult table {
 	width:610px;
+}
+
+.row-fluid div.scrolldown {
+	display: none;
 }
 
  
@@ -373,6 +385,55 @@ body {
 	margin:0 15px !important;	
   }
   
+  .scrolldown {
+	position:fixed;
+	left: 0px;
+	bottom: 0px;
+	display:block;
+	background-color: #CC0033;
+	text-align: center;
+  }
+  
+  .scrolldown a {
+	line-height: 1.8em;	
+	color: #FFF;
+	text-decoration: none;
+	font-weight: bold;
+  }
+  
+  
+  .download_icon {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(255, 255, 255, 0.9);
+	display:block;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+  }
+  
+  .download_icon p{
+	font-size: 13px;
+	margin-top: 10px;
+	font-weight: bold;
+
+  }
+  
+  .mom_icon {
+	  float: left;
+	  margin: 12px 15px 10px 20px; 
+  }
+  
+
+  
+  
+  .download_icon .icon-remove {
+	  position:fixed;
+	  right: 0;
+	  margin: 5px;
+	  cursor: pointer;
+  }
 
   
 	
