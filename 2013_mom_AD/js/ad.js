@@ -1,5 +1,18 @@
 //跑馬燈 ---------------- start
+var dfp_event_timer;
 $(window).load(function() {
+  if(navigator.appName.indexOf("Internet Explorer")!=-1){
+    dfp_event_time = setInterval(function(){
+      if($("[data-type=marquee] iframe").length >= $("[data-type=marquee] li").length){
+        activate_marquee_ultrim();
+        window.clearInterval(dfp_event_time);
+      }
+    },100);
+  }else{
+    activate_marquee_ultrim();  
+  }
+});
+function activate_marquee_ultrim(){
   var disable_flag = true;
   $('[data-type=marquee] > li iframe:visible').each(function(){
     var obj_iframe = $(this).contents();
@@ -21,7 +34,8 @@ $(window).load(function() {
     $('div.searchHotKeyword_PR').remove();
   }
   activate_marquee();
-});
+}
+
 function activate_marquee(){
   $('[data-type=marquee]').each(function(){
     var dom = $(this);
